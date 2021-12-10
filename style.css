@@ -54,7 +54,6 @@ header .navigation a{
     padding: 2px 15px;
     border-radius: 20px;
     transition: 0.3s;
-    transition-property: color;
 }
 
 header .navigation a:not(:last-child){
