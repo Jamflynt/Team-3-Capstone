@@ -53,7 +53,7 @@ header .navigation a{
     padding: 2px 15px;
     border-radius: 20px;
     transition: 0.3s;
-    transition-property: background;
+    transition-property: color;
 
 }
 
@@ -199,6 +199,15 @@ footer a:visited {
 /* Landing Page Queries */
 
 @media (max-width: 960px){
+    header {
+        background: var(--grey);
+        justify-content: flex-end;
+    }
+
+    header .logo {
+        display: none;
+    }
+
     header .navigation{
          display: none;
     }

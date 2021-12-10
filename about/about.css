@@ -20,6 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--grey);
+    color: #fff;
 }
 
 /* Navbar Styles (Added after) */
@@ -549,7 +550,18 @@ footer .social .icons {
 }
 }
 
+/* Navbar Media Queries */
 @media (max-width: 960px){
+
+    header {
+        background: var(--grey);
+        justify-content: flex-end;
+    }
+
+    header .logo {
+        display: none;
+    }
+    
     header .navigation{
          display: none;
     }
@@ -572,13 +584,15 @@ footer .social .icons {
    }
  
   #check:checked ~ header .navigation{
-     z-index: 10;
+     z-index: 2;
      position: fixed;
      background: rgba(114,223,255,0.9);
      top: 0;
      bottom: 0;
      left: 0;
      right: 0;
+     width: 100vw;
+     height: 100vh;
      display: flex;
      flex-direction: column;
      justify-content: center;
