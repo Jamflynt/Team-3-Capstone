@@ -65,7 +65,8 @@ header .navigation a:hover{
 
 .content{
     width: auto;
-    height: 600px;
+    height: auto;
+    padding: 20px;
     background: var(--grey);
     display: flex;
     flex-direction: column;
@@ -90,16 +91,11 @@ header .navigation a:hover{
     margin-bottom: 30px;
 }
 
-.content .info h2 span{
-    color: #fff;
-    font-size: 50px;
-    font-weight: 600;
-}
-
 .content .info p{
-    font-size: 16px;
     font-weight: 500;
     margin-bottom: 40px;
+    font-size: 45px;
+    color: #fff;
 }
 
 .content .info-btn{
@@ -115,41 +111,13 @@ header .navigation a:hover{
     transition-property: background;
 }
 
-.content .info p {
-    color: #fff;
-}
-
 .content .info img {
-    width: 500px;
-    height: 350px;
+    width: 800px;
+    height: 500px;
 }
 
 .content .info-btn:hover{
     background: var(--grey);
-}
-
-.media-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.media-icons a{
-    position: relative;
-    color: #111;
-    font-size: 25px;
-    transition: 0.3s;
-    transition-property: transform;
-}
-
-.media-icons a:not(:last-child){
-    margin-right: 60px;
-
-}
-
-.media-icons a:hover{
-    transform: scale(1.5);
 }
 
 label{
@@ -233,9 +201,7 @@ footer a:visited {
     header .navigation{
          display: none;
     }
- 
- 
- 
+
     label{
      display: block;
      font-size: 25px;
@@ -249,9 +215,9 @@ footer a:visited {
    }
  
    label .close-btn{
+       color: #fff;
      display: none;
    }
- 
  
   #check:checked ~ header .navigation{
      z-index: 2;
@@ -304,29 +270,58 @@ footer a:visited {
      font-size: 40px;
      font-weight: 600;
   }
- 
-  .content .info p{
-     font-size: 14px;
-  }
+
+  .content{
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+
+.content .info h2{
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: auto;
+    margin-bottom: 20px;
+}
+
+.content .info p{
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.content .info img {
+    width: 500px;
+    height: 300px;
+}
  }
  
  
  @media(max-width: 560px){
  
-   .content .info h2{
-     font-size: 35px;
-     line-height: 40px;
+    .content{
+        width: auto;
+        height: auto;
+        padding: 20px;
     }
-  
- 
-   .content .info h2 span{
-     font-size: 30px;
-     font-weight: 600;
-   }
- 
-   .content .info p{
-     font-size: 14px;
-   }
+    
+    .content .info h2{
+        font-size: 35px;
+        letter-spacing: 2px;
+        line-height: auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .content .info p{
+        margin-bottom: 40px;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .content .info img {
+        width: 350px;
+        height: 200px;
+    }
  
  } 
 
