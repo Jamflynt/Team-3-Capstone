@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+--green: #03979Dff;
+--blue: #0D62CBff;
+--grey: #535353ff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey);
+}
+
+/* Header Info */
+.headerLogo {
+    width: 500px;
+    height: 300px;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Split Cards */
+.aniH2 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    opacity: 0.0;
+    transition: opacity 0.6s ease;
+}
+
+p {
+    font-weight: 300;
+}
+
+/* h2 Fade Animation */
+.aniH2.showH2 {
+    opacity: 1;
+}
+
+.splitCards {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Card Scroll Animation Classes */
+.card {
+    margin: 0 30px;
+    transform: translateX(400%);
+    transition: transform 0.8s ease;
+}
+
+.card:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.card.show {
+    transform: translateX(0);
+}
+/* Animation End */
+
+.splitImage img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgb(0, 0, 0, 0.3);   
+}
+
+.leftAboutText {
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: var(--green);
+    box-shadow: 2px 4px 5px rgb(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightAboutText {
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    box-shadow: 2px 4px 5px rgb(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-grid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 10px;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+a {
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+/* Full Card Info */
+.fullCard {
+    width: 1000px;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: var(--blue);
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgb(0, 0, 0, 0.3);
+    color: #fff;
+    overflow-y: hidden;
+}
+
+/* Instructor Specific */
+.instructorGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.instructors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instructors hr {
+    width: 150px;
+    margin-top: -10px;
+}
+
+.instructors .instructorPic {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: -10px;
+}
+
+.instructors p {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Apply/need Specific */
+
+.expect {
+    background-color: var(--green);
+    overflow-y: hidden;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 25px;
+}
+
+.expect-two {
+    margin-top: -3px;
+}
+
+.expect-three {
+    margin-top: -2px;
+}
+
+.display img {
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.display p {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 1.5em;
+}
+
+.display p a {
+    font-size: 25px;
+}
+
+.display p a:visited {
+    color: #fff;
+}
+
+.expect-three span {
+    font-size: 30px;
+}
+
+.expect-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 10px;
+}
+
+.expect-grid hr {
+    width: 150px;
+}
+
+/* Footer Specific */
+footer {
+    background-color: var(--blue);
+    width: 100%;
+    height: auto;
+}
+
+footer h5 {
+    font-size: 18px;
+}
+
+footer hr {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.foot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+.foot-grid-item {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.foot-grid img {
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+}
+
+footer .social .icons {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 28px;
+}
+
+
+@media (max-width: 1020px) {
+    h1 {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .headerLogo {
+        width: 300px;
+        height: 180px;
+    }
+
+    .aniH2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .splitCards {
+        grid-template-columns: repeat(2, 50%);
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        margin: 0 30px;
+    }
+
+    .splitImage img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .leftAboutText {
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+        font-size: 18px;
+    }
+    
+    .rightAboutText {
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+        font-size: 18px;
+    }
+    
+    .skill-grid {
+        width: 90%;
+        grid-template-columns: repeat(2, 50%);
+        gap: 10px;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .fullCard {
+        width: 95%;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 20px;
+        overflow-y: hidden;
+    }
+    
+    /* Instructor Specific */
+    .instructorGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    
+    .instructors hr {
+        width: 150px;
+        margin-top: -10px;
+    }
+
+    /* Apply/need Specific */
+
+    .fullCard.expect {
+        height: 350px;
+    }
+    
+    .display {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .display img {
+        width: 100%;
+        margin-bottom: -10px;
+    }
+    
+    .display p {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .expect-three span {
+        font-size: 25px;
+    }
+    
+    .expect-grid {
+        gap: 5px;
+    }
+
+    /* Footer */
+    footer h5 {
+        font-size: 18px;
+    }
+    
+    .foot-grid {
+        grid-template-columns: repeat(3, 33%);
+    }
+    
+    .foot-grid-item {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .foot-grid img {
+        margin: 20px;
+        width: 200px;
+        height: 150px;
+    }
+    .contact {
+        font-size: 12px;
+    }
+
+    .disclosure {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 730px) {
+    .aniH2 {
+        font-size: 25px;
+    }
+
+    .splitCards {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .card {
+        margin: 10px 20px;
+    }
+
+    .fullCard {
+        height: auto;
+        margin-bottom: 40px;
+    }
+    
+    /* Instructor Specific */
+    .instructors p {
+        text-align: center;
+        padding: 10px;
+    }
+    /* Apply/need Specific */
+
+    .fullCard.expect {
+        height: 750px;
+        margin-bottom: 40px;
+    }
+
+    .expect-grid {
+        grid-template-columns: 1fr;
+    }
+    .display img {
+        width: 60%;
+    }
+    
+    /* Footer */
+    footer h5 {
+        font-size: 18px;
+    }
+    
+    .foot-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .foot-grid-item {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .foot-grid img {
+        margin: 20px;
+        width: 150px;
+        height: 100px;
+    }
+
+    .contact {
+        font-size: 10px;
+    }
+
+    .disclosure {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 380px){
+.display img {
+    width: 75%;
+}
+}
