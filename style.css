@@ -41,8 +41,9 @@ header .logo{
     font-size: 30px;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 400;
     letter-spacing: 1px;
+    /* display: none; */
 }
 
 header .navigation a{
@@ -54,7 +55,6 @@ header .navigation a{
     border-radius: 20px;
     transition: 0.3s;
     transition-property: color;
-
 }
 
 header .navigation a:not(:last-child){
