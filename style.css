@@ -117,7 +117,8 @@ header .navigation a:hover{
 }
 
 .content .info-btn:hover{
-    background: var(--grey);
+    background: var(--blue);
+    transition: 0.5s;
 }
 
 label{
