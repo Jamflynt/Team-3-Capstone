@@ -22,6 +22,7 @@ body {
     background-color: var(--grey);
 }
 
+/* Navbar Styles (Added after) */
 section{
     position: relative;
     width: 100%;
@@ -44,7 +45,7 @@ header{
 
 header .logo{
     position: relative;
-    color: #000;
+    color: #fff;
     font-size: 30px;
     text-decoration: none;
     text-transform: uppercase;
@@ -66,7 +67,6 @@ header .navigation a{
     border-radius: 20px;
     transition: 0.3s;
     transition-property: background;
-    
 }
 
 header .navigation a:not(:last-child){
@@ -74,6 +74,15 @@ header .navigation a:not(:last-child){
 }
 header .navigation a:hover{
     background: var(--green);
+}
+
+label{
+    display: none;
+}
+
+#check{
+    z-index: 3;
+    display: none;
 }
 
 /* Header Info */
