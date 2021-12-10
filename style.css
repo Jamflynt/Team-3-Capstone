@@ -12,6 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: #fff;
 }
 
 section{
@@ -321,6 +322,10 @@ footer a:visited {
     .content .info img {
         width: 350px;
         height: 200px;
+    }
+
+    footer .foot-grid-item img {
+        display: none;
     }
  
  } 
