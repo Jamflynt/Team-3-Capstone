@@ -4,6 +4,7 @@
     --green: #03979Dff;
     --blue: #0D62CBff;
     --grey: #535353ff;
+    --star-command-blue: #2A80B9ff;
     }
  
     
@@ -397,4 +398,15 @@ footer a:visited {
     .disclosure {
         font-size: 10px;
     }
+}
+
+/* Loader Animation */
+#preloader {
+    background:var(--star-command-blue) url("images/Preloader.gif") no-repeat center center;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    opacity: 1;
 }
