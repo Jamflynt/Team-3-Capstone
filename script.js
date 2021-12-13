@@ -3,8 +3,8 @@ window.addEventListener("load", function(){
     loadFade();
 })
 
-let int = setInterval(loadFade, 15)
-let load = -100;
+let int = setInterval(loadFade, 30)
+let load = -150;
 function loadFade() {
     load++;
     if(load > 99) {
