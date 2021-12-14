@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
 })
 
 let int = setInterval(loadFade, 30)
-let load = -150;
+let load = -125;
 function loadFade() {
     load++;
     if(load > 99) {

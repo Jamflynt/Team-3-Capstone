@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --green: #03979Dff;
+    --blue: #0D62CBff;
+    --grey: #535353ff;
+    }
+ 
+
+/* Make Sure this is in your styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--blue);
+}
+
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+header .navigation a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+header .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+header .navigation a:hover{
+    background: var(--green);
+}
+
+.content{
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background: var(--grey);
+}
+
+/* DO NOT REMOVE Important for Nav Function */
+label{
+    display: none;
+}
+
+#check{
+    z-index: 3;
+    display: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--blue);
+    width: 100%;
+    height: auto;
+}
+
+footer h5 {
+    font-size: 18px;
+}
+
+footer hr {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.foot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+.foot-grid-item {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.foot-grid img {
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+}
+
+footer .social .icons {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 28px;
+}
+
+footer .social .icons {
+    list-style-type: none;
+}
+
+footer .social .icons li a i {
+    color: #fff;
+}
+
+footer .social .icons li a:visited {
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:visited {
+    color: #fff
+}
+
+
+/* Mobile Nav Bar */
+@media (max-width: 960px){
+    header {
+        background: var(--blue);
+        justify-content: flex-end;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header .navigation{
+         display: none;
+    }
+
+    label{
+     display: block;
+     font-size: 25px;
+     cursor: pointer;
+     transition: 0.3s;
+     transition-property: color;
+    }
+ 
+   label:hover{
+     color: #fff;
+   }
+ 
+   label .close-btn{
+       color: #fff;
+        display: none;
+   }
+ 
+  #check:checked ~ header .navigation{
+     z-index: 2;
+     position: fixed;
+     background: rgba(114,223,255,0.9);
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  }
+ 
+  #check:checked ~ header .navigation a{
+     font-weight: 700;
+     margin-right: 0;
+     margin-bottom: 50px;
+     letter-spacing: 2px;
+ 
+  }
+ 
+  #check:checked ~ header label .menu-btn{
+     display:none;
+  }
+ 
+  #check:checked ~ header .close-btn{
+ 
+     z-index: 2;
+     display: block;
+     position: fixed;
+  }
+ 
+  label .menu-btn{
+     position: absolute;
+  }
+ 
+  header .logo{
+     position: absolute;
+     bottom: -6px;
+  }
+ 
+ }
+
+ /* Footer Queries */
+ @media (max-width: 1020px) {
+
+    footer h5 {
+        font-size: 18px;
+    }
+    
+    .foot-grid {
+        grid-template-columns: repeat(3, 33%);
+    }
+    
+    .foot-grid-item {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .foot-grid img {
+        margin: 20px;
+        width: 200px;
+        height: 150px;
+    }
+    .contact {
+        font-size: 12px;
+    }
+
+    .disclosure {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 730px) {
+    footer h5 {
+        font-size: 18px;
+    }
+    
+    .foot-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .foot-grid-item {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .foot-grid img {
+        margin: 20px;
+        width: 150px;
+        height: 100px;
+    }
+
+    .contact {
+        font-size: 10px;
+    }
+
+    .disclosure {
+        font-size: 10px;
+    }
+}
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--blue);
+    color: #fff;
+  }
+  h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+  }
+  
+  .accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  .accordion-item {
+    background-color: var(--grey);
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  }
+  .accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+  }
+  .accordion-item-header.active::after {
+    content: "\2212";
+  }
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  }
+  
+  @media(max-width:767px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  .content {
+    background-color: #0D62CBff;
+  }
