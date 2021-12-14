@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CommonWealth Coders Interest Form">
+    <meta name="author" content="Maurice Collier">
+    <title>CommonWealth Coders Interest & Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Nav Code Starts Here -->
+    <section>
+        <input type="checkbox" id="check">
+        <header>
+            <h2> <a href="index.html" class="logo"><i class="fas fa-laptop-code"></i></a></h2>
+            <div class="navigation">
+                <a href="#">Home</a>
+                <a href="about/about.html">About</a>
+                <a href="#">Showcase</a>
+                <a href="#">Contact</a>
+                <a href="#">Forum</a>
+            </div>
+            <label for="check">
+                <i class="fas fa-bars menu-btn"></i>
+                <i class="fas fa-times close-btn"></i>
+            </label>
+        </header>
+    </section>
+    <!-- Nav Code ENDS Here -->
+
+    <!-- Form Code Starts Here -->
+    <div></div>
+    <div id="colorbox">
+
+        <h1>Commonwealth Coders Interest Form</h1>
+
+        <p>The Bluegrass, Cumberlands, Northern Kentucky and South Central Workforce Development/Innovation Boards are
+            launching "Commonwealth Coders," an intensive 16-week Web Development Training Course again in January 2022.
+            If
+            you are interested in possibly participating, please set aside approximately 20 minutes to complete this
+            initial
+            survey, making sure all of your responses are complete and comprehensive. While this is the first step
+            toward
+            becoming a student in the program, it is an important one. Please make your very best effort as spots will
+            be
+            limited.</p>
+    </div>
+
+
+
+    <form id="form">
+
+        <div class="form-control">
+            <h4>Required *</h4>
+
+            <br>
+            <label for="name" id="label-name">
+                1. First Name: *
+            </label>
+
+            <input type="text" id="name" placeholder="Type your first name" />
+            <br>
+            <label for="name" id="label-name">
+                2. Last Name: *
+            </label>
+            <input type="text" id="name" placeholder="Type your last name" />
+
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                3. Email address: *
+            </label>
+
+
+            <input type="email" id="email" placeholder="Enter your you@email.com address" />
+        </div>
+
+        <div class="form-control">
+            <label for="phone">4. Enter your best contact number: *</label>
+            <input type="text" id="phone" name="phone-number" placeholder="Enter your phone number">
+        </div>
+        <div class="form-control">
+            <label for="birthday">5. What is your Birthday: *</label>
+            <input type="date" id="birthday" name="birthday" placeholder="Please enter date in (mm/dd/yyyy)">
+        </div>
+        <div class="form-control">
+            <label for="zip code" id="zip code">
+                6. Please enter your zip code: *
+            </label>
+            <input type="text" id="zip code" placeholder="Type your zip code" />
+        </div>
+        <div class="form-control">
+            <label>
+                7. What Workforce Board Region do you live in? (Please read each list of counties for each board and
+                select
+                which one fits you.) *
+            </label>
+            <label for="Bluegrass-1">
+                <input type="radio" id="Bluegrass-1" name="Bluegrass-1"> <em>Bluegrass Workforce Board</em> (Counties:
+                Anderson,
+                Bourbon, Boyle, Clark, Estill, Fayette, Franklin, Garrard, Harrison, Jessamine, Lincoln, Madison,
+                Mercer, Nicholas, Powell, Scott and Woodford)</input>
+            </label>
+            <label for="Cumberlands-2">
+                <input type="radio" id="Cumberlands-2" name="Cumberlands-2"> <em>Cumberlands Workforce Board</em>
+                (Counties:
+                Adair, Casey, Clinton, Cumberland, Green, Laurel, McCreary, Pulaski, Rockcastle, Russell, Taylor, Wayne
+                and Whitley)</input>
+            </label>
+            <label for="Northern-3">
+                <input type="radio" id="Northern-3" name="Northern-3"> <em> Northern Workforce Board </em>(Counties:
+                Boone,
+                Campbell, Carroll, Gallatin, Grant, Kenton, Owen and Pendleton)</input>
+            </label>
+            <label for="South Central-4">
+                <input type="radio" id="South Central-4" name="South Central-4"> <em> South Central Workforce Board</em>
+                (Counties: Allen, Barren, Butler, Edmonson, Hart, Logan, Metcalfe, Monroe, Simpson and Warren)
+                </input>
+            </label>
+            <label for="Other-5">
+                <input type="radio" id="Other-5" name="Other-5"> Other</input>
+                <br>
+                <input type="text" id="Other-5" placeholder="Type your county if not listed" />
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="Bluegrass-1">8. What is the highest level of school you have completed? *
+            </label>
+            <label for="GED">
+                <input type="radio" id="GED" name="GED"> High School or GED</input>
+            </label>
+
+            <label for="College(Associate's Degree)">
+                <input type="radio" id="College(Associate's Degree)" name="College(Associate's Degree)"> College
+                (Associate's Degree)</input>
+            </label>
+
+            <label for="College (Bachelor's Degree)">
+                <input type="radio" id="College (Bachelor's Degree)" name="College (Bachelor's Degree)"> College
+                (Bachelor's Degree)</input>
+            </label>
+            <label for="Graduate School">
+                <input type="radio" id="Graduate School" name="Graduate School"> Graduate School</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>9. What is your current employment status?
+                <small>(Check all that apply) *</small>
+            </label>
+
+            <label for="college student">
+                <input type="checkbox" name="college student"> College Student</input></label>
+            <label for="Full-time">
+                <input type="checkbox" name="Full-time"> Full-time, Employed</input></label>
+            <label for="Part-time">
+                <input type="checkbox" name="Part-time"> Part-time, Employed</input></label>
+            <label for="Unemployed">
+                <input type="checkbox" name="Unemployed"> Unemployed</input></label>
+            <label for="Unemployed due to covid">
+                <input type="checkbox" name="Unemployed due to covid"> Unemployed due to COVID</input></label>
+            <label for="Other status">
+                <input type="checkbox" name="inp"> Other employment status<textarea name="" id="" cols="3" rows="1"
+                    placeholder="Please type your employment status"></textarea></input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>10. How did you find out about this program?
+                <small>(Check all that apply) *</small>
+            </label>
+            <label for="Instagram">
+                <input type="checkbox" name="Instagram"> Instagram</input>
+            </label>
+            <label for="Facebook">
+                <input type="checkbox" name="Facebook"> Facebook</input>
+            </label>
+            <label for="Twitter">
+                <input type="checkbox" name="Twitter"> Twitter</input></label>
+            <label for="Newspaper or Television">
+                <input type="checkbox" name="Newspaper or Television"> Newspaper or Television</input>
+            </label>
+            <label for="Internet">
+                <input type="checkbox" name="Internet"> Internet</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="name" id="label-name">
+                11. What experience do you have (if any) with Computer Science and/or Programming? (NOTE: No experience
+                is required): *
+            </label>
+            <input type="text" id="name" placeholder="Please type your answer" />
+        </div>
+        <div class="form-control">
+            <label for="answer"> 12. Would you be able to begin class on January 18, 2022? *</label>
+            <label for="yes"><input type="checkbox" name="answer"> Yes</input></label>
+            <label for="no"><input type="checkbox" name="answer"> No</input></label>
+            <label for="maybe"><input type="checkbox" name="answer"> Maybe</input></label>
+        </div>
+        <div class="form-control">
+            <label for="hobbies" id="hobbies">
+                13. Please take a few minutes to tell us about yourself, your hobbies, other interest, etc. *
+            </label>
+            <input type="text" id="hobbies" placeholder="Please type your answer" />
+        </div>
+        <div class="form-control">
+            <label for="name" id="label-name">
+                14. CommonWealth Coders is a $15,000 per participant program funded at little or no cost to you. Please
+                explain WHY Commonwealth Coders should invest in YOU: *
+            </label>
+            <input type="text" id="name" placeholder="Please type your answer" />
+        </div>
+        <div class="form-control">
+            <label for="name" id="label-name">
+                15. Fill in the blank with ONE word: "I would say that my greatest strength is _______________.' *
+            </label>
+            <input type="text" id="name" placeholder="Please type your answer" />
+        </div>
+        <div class="form-control">
+            <label for="name" id="label-name">
+                16. Fill in the blank with ONE word: "I would say that my greatest weakness is ____________________." *
+            </label>
+            <input type="text" id="name" placeholder="Please type your answer" />
+        </div>
+        <div class="form-control">
+            <label for="name" id="label-name">
+                17. What else would be helpful to know about you that has not already been covered? *
+            </label>
+
+            <input type="text" id="name" placeholder="Please type your answer" />
+        </div>
+        <div class="form-control">
+            <label for="name" id="label-name">
+                18. The above mentioned Boards do not discriminate on the basis of race, color, religion, sex, national
+                origin, sexual orientation, gender identity, ancestry, age, disability, political affiliation, genetic
+                information or veteran status in accordance with state and federal laws. *
+            </label>
+            <input type="radio" id="name"> I have read the above statment.
+        </div>
+
+
+
+
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+
+    <footer>
+        <div class="foot-grid">
+            <div class="foot-grid-item">
+                <img src="../images/CC-Logo-Redo-NoFlower-No-BG.png"
+                    alt="Commonwealth Coders Logo. Many blue dots arranged in the shape of the State of Kentucky. Behind it is a golden circle that contains the text 'United We Code.' in a dark blue color. Above the circle and following its curve is the text 'Commonwealth Coders' in the same golden color as the circle.">
+            </div>
+            <div class="foot-grid-item">
+                <h5>Contact</h5>
+                <hr>
+                <p class="contact">2355 Nashville Road
+                    <br>
+                    Suite C101
+                    <br>
+                    Bowling Green, Kentucky 42101
+                    <br>
+                    contact@southcentralworkforce.com
+                    <br>
+                    270-745-3905
+                    <br>
+                    Mon. – Fri. 8 a.m. – 4:30 p.m.
+                </p>
+                <div class="social">
+                    <ul class="icons">
+                        <li><a href="https://www.linkedin.com/company/commonwealth-coders/" class="linkdin"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/SCKYWDB/" class="facebook"><i
+                                    class="fab fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-grid-item">
+                <h5>Disclosure</h5>
+                <hr>
+                <p class="disclosure">Commonwealth Coders does not discriminate on the basis of race, color,
+                    religion, sex, national origin, sexual orientation, gender identity, ancestry, age, disability,
+                    political affiliation, genetic information, or veteran status in accordance with state and federal
+                    laws.
+                    <br>
+                    <br>
+                    Local EO Officer:
+                    <br>
+                    Leslie Witty, VP of Outreach and Communications
+                    <br>
+                    2355 Nashville Rd., Suite C101
+                    <br>
+                    Bowling Green, KY 42101
+                    <br>
+                    (270) 745-3905
+                </p>
+                <br>
+                <p> <a href="https://southcentralworkforce.com/index.php/wpautoterms/privacy-policy/">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
